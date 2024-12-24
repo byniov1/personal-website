@@ -11,3 +11,4 @@ import { NavigationComponent } from "./navigation/navigation.component";
 export class AppComponent {
   title = 'personal-website';
 }
+ 

@@ -5,7 +5,6 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 
-// TODO 404 page
 // TODO lazy loading
 export const APP_ROUTES: Routes = [
   {

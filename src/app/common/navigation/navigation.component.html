@@ -1,5 +1,22 @@
-<nav>
+<nav class="nav">
   <!-- Todo picture instead of link -->
-  <a routerLink="/" routerLinkActive="router-link-active">Home</a>
-  <a routerLink="/blog" routerLinkActive="router-link-active">Blog</a>
+  <a routerLink="/" class="nav__avatar">
+    <img src="avatar.webp" alt="avatar" class="nav__avatar--image" />
+    HIRNY ADAM
+  </a>
+
+  <div class="nav__links">
+    <a
+      routerLink="/blog"
+      [routerLinkActive]="'router-link-active'"
+      class="nav__link"
+      >Blog</a
+    >
+    <a
+      routerLink="/about"
+      [routerLinkActive]="'router-link-active'"
+      class="nav__link"
+      >About Me</a
+    >
+  </div>
 </nav>

@@ -6,14 +6,8 @@ import {
   withDebugTracing,
   withPreloading,
 } from '@angular/router';
-import { APP_ROUTES } from './app/app.routing';
+import { appConfig } from './app/app.routing';
 
-bootstrapApplication(AppComponent, {
-  providers: [
-    provideRouter(
-      APP_ROUTES,
-      withPreloading(PreloadAllModules),
-      withDebugTracing()
-    ),
-  ],
-}).catch((err) => console.error(err));
+bootstrapApplication(AppComponent, appConfig).catch((err) =>
+  console.error(err)
+);

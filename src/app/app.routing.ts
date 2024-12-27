@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ApplicationConfig } from '@angular/core';
+import { provideRouter, Routes } from '@angular/router';
 
+import { provideClientHydration } from '@angular/platform-browser';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 
 // TODO 404 page
 // TODO lazy loading
-
 export const APP_ROUTES: Routes = [
   {
     path: '',
@@ -14,4 +14,9 @@ export const APP_ROUTES: Routes = [
     component: AboutComponent,
   },
   { path: 'blog', component: BlogComponent },
+  { path: '**', redirectTo: '' },
 ];
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideRouter(APP_ROUTES), provideClientHydration()],
+};

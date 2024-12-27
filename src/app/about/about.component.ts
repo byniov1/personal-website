@@ -6,5 +6,6 @@ import { CommonsModule } from '../common/common.module';
   imports: [CommonsModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
+  standalone: true,
 })
 export class AboutComponent {}

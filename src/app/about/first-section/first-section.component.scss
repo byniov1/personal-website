@@ -1,0 +1,22 @@
+// Dodać owrapowanie na ten komponent w css
+
+//Zmienić font
+.first-section {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12vh;
+
+  &-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.avatar--image {
+  border-radius: 50px;
+  height: 50vh;
+  align-self: center;
+}

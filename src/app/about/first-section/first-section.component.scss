@@ -3,9 +3,11 @@
 //Zmienić font
 .first-section {
   height: 70vh;
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 12vh;
+  margin-bottom: 14vh;
 
   &-info {
     width: 50%;

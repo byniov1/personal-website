@@ -1,0 +1,75 @@
+.experience-section {
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+  }
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-item {
+  padding: 1.5rem;
+  border-left: 4px solid #007bff;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+
+  .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    color: #333;
+  }
+
+  .position-title {
+    font-style: italic;
+    color: #666;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+  }
+
+  .responsibilities {
+    margin: 0;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+      color: #555;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .experience-item {
+    padding: 1rem;
+
+    .company-name {
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss',
   standalone: true,
 })
-export class CardComponent {}
+export class CardComponent {
+  public readonly imgSrc = input<string>('angular-feature-image-1-min.png');
+  public readonly text = input<string>('skill');
+}

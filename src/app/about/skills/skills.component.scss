@@ -1,11 +1,12 @@
 .skills {
   height: 100vh;
-  
 
   &-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
   }
 }

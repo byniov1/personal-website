@@ -3,6 +3,7 @@ import { CommonsModule } from '../common/common.module';
 import { FirstSectionComponent } from './first-section/first-section.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-about',
@@ -11,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
     FirstSectionComponent,
     ExperienceComponent,
     SkillsComponent,
+    FooterComponent,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',

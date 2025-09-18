@@ -1,0 +1,119 @@
+.footer {
+  //   width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 2rem 1rem 2rem;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .footer-left {
+    flex: 1;
+    max-width: 500px;
+
+    .footer-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 0 1rem 0;
+      letter-spacing: 1px;
+    }
+
+    .footer-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      color: #ccc;
+    }
+  }
+
+  .footer-right {
+    flex-shrink: 0;
+
+    .social-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0 0 1rem 0;
+      letter-spacing: 1px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+
+      .social-link {
+        color: #fff;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        padding: 0.5rem;
+        border-radius: 5px;
+
+        &:hover {
+          color: #007bff;
+          transform: translateY(-2px);
+        }
+
+        &:focus {
+          outline: 2px solid #007bff;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    .footer-divider {
+      border: none;
+      height: 1px;
+      background-color: #333;
+      margin: 0 0 1rem 0;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin: 0;
+
+      .author-link {
+        color: #007bff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1rem 1rem;
+
+    .footer-right {
+      .social-icons {
+        justify-content: center;
+
+        .social-link {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
